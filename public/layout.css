@@ -1,0 +1,7 @@
+body {background-color: aquamarine;}
+
+#wrapper {width: 400px; margin: auto;}
+#information {border: 1px solid gray; margin: 10px; padding: 10px;}
+#txtHoTen,#txtEmail,#txtSDT {display: block; margin-top: 10px;}
+#btnRegister {margin: 10px;}
+.hocvien {border-bottom: 1px solid #0c50ef;padding:2px;}

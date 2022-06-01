@@ -1,0 +1,16 @@
+1. Tạo file Procfile trong thư mục dự án, trong file này gõ nội dung sau:
+web: node server.js
+để cho server Heroku biết file đầu tiên cần truy cập khi khởi chạy app
+2. Chỉ định port:
+Trong file: server.js thay 
+server.listen(3000);
+bằng: 
+server.listen(process.env.PORT || 3000);
+3. Trong file xuly.js thay
+var socket=io("localhost:3000"); bằng:
+var socket=io("https://minigamehn.herokuapp.com");
+4. Trong file trangchu.ejs thay 
+<script src="/socket.io/socket.io.js"></script> 
+bằng:
+<script src="https://minigamehn.herokuapp.com/socket.io/socket.io.js"></script>
+để cho trình duyệt safari có thể truy cập file socket.io.js
