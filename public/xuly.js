@@ -8,7 +8,7 @@ socket.on("server-gui-ds",data=>{
         $("#ds").append(`
             <div class="hocvien">
                 <div class="hang1">id:`+index+` || <span>`+hocvien.hoten+`</span></div>
-                <div class="hang2">`+hocvien.email+`-`+hocvien.sdt+`0905666889</div>
+                <div class="hang2">`+hocvien.email+`-`+hocvien.sdt+`</div>
             </div>
         `)
     })
